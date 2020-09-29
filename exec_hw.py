@@ -10,7 +10,7 @@ def get_students(filename):
     student_fullname = {}
     fp = open(filename, 'r')
     for line in fp:
-        sn = line.strip().lower().split(' ')
+        sn = line.strip().lower().replace("\'", "").split(' ')
         abbr = sn[1] + sn[0]
         student_fullname[abbr] = line.strip()
     return student_fullname
