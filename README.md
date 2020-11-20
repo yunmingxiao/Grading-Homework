@@ -3,7 +3,11 @@ This is a script for easily grading the homework
 
 The command to run the script is like this:
 ```
-python3 exec_hw.py my_students.txt commands.py dir
+python3 exec_hw[1,5].py my_students.txt commands1.py commands2.py dir
+```
+or
+```
+python3 exec_hw[2,3].py my_students.txt commands1.py dir
 ```
 where 
 
